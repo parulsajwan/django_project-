@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   {% load static %}
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/all.css'%}">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <!-- Custom -->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <!--lightbox-->
+    <link rel="stylesheet" href="{% static 'css/lighbox.min.css'%}">
+    <title>my site </title>
+
+
+</head>
+<body>
+
+
+{% include 'partials/_topbar.html'%}
+<!-- it will  add top bar here -->
+{% include 'partials/_navbar.html'%}
+<!-- it will add nav  bar here -->
+{% include 'partials/_footer.html'%}
+<!-- it will  add footer bar here -->
+{% block content %}
+{% endblock %}
+
+<script src="{%static 'js/jquery-3.3.1.min.js'%}"></script>
+<script src="{%static 'js/bootstrap.bundle.min.js'%}"></script>
+<script src="{%static 'js/bootstrap.lightbox.js'%}"></script>
+<script src="{%static 'js/main.js'%}"></script>
+
+
+</body>
+</html>
